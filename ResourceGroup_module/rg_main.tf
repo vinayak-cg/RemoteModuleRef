@@ -1,9 +1,9 @@
 terraform {
-  required_version = "1.32.0"
+  required_version = "0.12.6"
 }
 
 provider "azurerm" {
-  version = "=1.32.0"
+  version = "=0.12.6"
 }
 
 locals {
