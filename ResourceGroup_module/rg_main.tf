@@ -1,10 +1,7 @@
 
 provider "azurerm" {
   version = "=2.82.0"
-}
-provider "azurerm" {
-  features {}
-  alias = "test12"
+  backend "azurerm" {}
 }
 locals {
   defaultname = "${var.customer}-rg-${var.category}-${var.applicationname}-${var.environment}"
