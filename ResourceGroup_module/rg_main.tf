@@ -9,7 +9,7 @@ locals {
 
 resource "azurerm_resource_group" "main" {
 
-  name     = var.name == "" ? local.defaultname : var.name
+  name     = local.defaultname
   location = var.location
 
   tags = var.tags
