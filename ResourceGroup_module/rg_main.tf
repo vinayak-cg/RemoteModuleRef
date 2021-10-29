@@ -1,8 +1,7 @@
 
 provider "azurerm" {
   version = "=2.82.0"
-  backend "azurerm" {}
-}
+ }
 locals {
   defaultname = "${var.customer}-rg-${var.category}-${var.applicationname}-${var.environment}"
 }
