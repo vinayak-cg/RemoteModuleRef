@@ -4,6 +4,7 @@ provider "azurerm" {
 }
 provider "azurerm" {
   features {}
+  alias = "test12"
 }
 locals {
   defaultname = "${var.customer}-rg-${var.category}-${var.applicationname}-${var.environment}"
